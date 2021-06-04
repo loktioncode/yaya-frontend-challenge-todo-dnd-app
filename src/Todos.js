@@ -128,14 +128,16 @@ export default class AppDragDropDemo extends Component {
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "inprogress")}}>
                     <span className="task-header">IN PROGRESS</span>
-                    {tasks.inprogress}
+                    
+                    {tasks.inprogress.length === 0 ? <p>No todo's in progress</p>: tasks.inprogress}
+
                 </div>
 
                 <div className="droppable" 
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>this.onDrop(e, "complete")}>
                      <span className="task-header">COMPLETED</span>
-                     {tasks.complete}
+                     {tasks.complete.length === 0 ? <p>{tasks.inprogress.length} todo's incomplete</p>: tasks.complete}
                 </div>
 
 
