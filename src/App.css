@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
-}
+   
+    background-color: #002e63;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
+  
+  .container-drag {
+    text-align: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .inprogress {
+    position: absolute;
+    width: 350px;
+    height: 90vh;
+    left: 150px;
+    top: 10;
+    background-color: #EEEEEE;
+    border-radius: 3px;
   }
+  
+  .header {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    color: aliceblue;
+  }
+  
+  .task-header {
+    display: inline-block;
+    background-color: skyblue;
+    width:100%;
+  }
+  
+  .droppable {
+    position: absolute;
+    width: 350px;
+    height: 90vh;
+    right: 150px;
+    top: 10;
+    background-color:#EEEEEE ;
+    border-radius: 3px;
+  }
+  
+  .draggable {
+    width: 320px;
+    height: 70px;
+    margin: 5px auto;
+    line-height: 5em;
+  }
+
+  input[type=text] {
+    border: 2px solid skyblue;
+    border-radius: 4px;
+    height: 40px;
+    width: 320px;
+    margin: 5px auto;
+  }
+
+  button[type=submit]{
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+  }
+
+  button[type=submit]:hover{
+    background-color: white;
+    border: none;
+    color: skyblue;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+
+  }
+
+
+  .wrap {
+    position: relative;
+    font-size: 0;
+}
+.wrap .close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 5px 2px 2px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .2;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+}
+.wrap:hover .close {
+    opacity: 1;
 }
