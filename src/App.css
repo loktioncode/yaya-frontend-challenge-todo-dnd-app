@@ -12,11 +12,12 @@
   .inprogress {
     position: absolute;
     width: 350px;
-    height: 90vh;
-    left: 150px;
-    top: 10;
+    height: inherit !important;
+    left: 200px;
+    top: 150px;
     background-color: #EEEEEE;
     border-radius: 3px;
+    padding-bottom: 25px;
   }
   
   .header {
@@ -36,11 +37,11 @@
   .droppable {
     position: absolute;
     width: 350px;
-    height: 90vh;
-    right: 150px;
-    top: 10;
+    right: 200px;
+    top: 150px;
     background-color:#EEEEEE ;
     border-radius: 3px;
+    padding-bottom: 25px;
   }
   
   .draggable {
@@ -48,6 +49,7 @@
     height: 70px;
     margin: 5px auto;
     line-height: 5em;
+    
   }
 
   input[type=text] {

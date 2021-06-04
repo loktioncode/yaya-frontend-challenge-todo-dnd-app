@@ -112,13 +112,8 @@ export default class AppDragDropDemo extends Component {
 
         return (
             <div className="container-drag">
-                <h2 className="header">Yaya Kanban Demo</h2>
-
-                <div className="inprogress"
-                    onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>{this.onDrop(e, "inprogress")}}>
-                    <span className="task-header">IN PROGRESS</span>
-                    <div>
+                <div className="header">
+                <h2 >Yaya Kanban Demo</h2>
                         <form>
                         <input
                             type='text'
@@ -127,11 +122,14 @@ export default class AppDragDropDemo extends Component {
                         />
                         <button type="submit" onClick={this.addItem}>Add todo</button>
                     </form>
-                </div>
+                </div> 
+
+                <div className="inprogress"
+                    onDragOver={(e)=>this.onDragOver(e)}
+                    onDrop={(e)=>{this.onDrop(e, "inprogress")}}>
+                    <span className="task-header">IN PROGRESS</span>
                     {tasks.inprogress}
                 </div>
-
-              
 
                 <div className="droppable" 
                     onDragOver={(e)=>this.onDragOver(e)}
