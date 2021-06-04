@@ -1,6 +1,6 @@
 # React Todo Kanban Frontend Challenge
 
-This project is live at [Yaya Todo Kanban](https://yayakanban.netlify.app).
+This project is live at [Yaya Todo Kanban](https://yayakanban.vercel.app/).
 
 ## Available Scripts
 
