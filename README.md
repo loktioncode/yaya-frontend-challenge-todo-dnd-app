@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Todo Kanban Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is live at [Yaya Todo Kanban](https://yayakanban.netlify.app).
 
 ## Available Scripts
 
